@@ -6,4 +6,16 @@ pessoa.name = "Miguel";
 pessoa.lastName = "Pereira";
 pessoa.age = 10;
 
-pessoa.showPerson();
+//pessoa.showPerson();
+
+Curso curso = new Curso();
+
+curso.addNewStudent(pessoa);
+
+pessoa.name = "Jubileu";
+pessoa.lastName = "James";
+pessoa.age = 20;
+
+curso.addNewStudent(pessoa);
+
+curso.studentsCounter();
