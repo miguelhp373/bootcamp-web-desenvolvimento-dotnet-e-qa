@@ -3,6 +3,7 @@
 Pessoa pessoa = new Pessoa();
 
 pessoa.name = "Miguel";
-pessoa.age = 21;
+pessoa.lastName = "Pereira";
+pessoa.age = 10;
 
 pessoa.showPerson();
