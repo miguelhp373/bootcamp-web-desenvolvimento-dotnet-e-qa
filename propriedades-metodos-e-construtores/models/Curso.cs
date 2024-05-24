@@ -7,29 +7,29 @@ namespace propriedades_metodos_e_construtores.models
 {
     public class Curso
     {
-        public string? name { get; set; }
-        public List<Pessoa> ?students { get; set; }
+        public string? Name { get; set; }
+        public List<Pessoa> ?Students { get; set; }
 
-        public void addNewStudent(Pessoa pessoa)
+        public void AddNewStudent(Pessoa pessoa)
         {
-            students!.Add(pessoa);
+            Students!.Add(pessoa);
         }
 
-        public int studentsCounter()
+        public int StudentsCounter()
         {
-            return students!.Count();
+            return Students!.Count();
         }
 
-        public bool removeStudent(Pessoa pessoa)
+        public bool RemoveStudent(Pessoa pessoa)
         {
-            return students!.Remove(pessoa);
+            return Students!.Remove(pessoa);
         }
 
-        public void listAllStudents()
+        public void ListAllStudents()
         {
-            foreach(Pessoa student in students)
+            foreach(Pessoa student in Students)
             {
-                Console.WriteLine(student.fullName);
+                Console.WriteLine(student.FullName);
             }
             
         }

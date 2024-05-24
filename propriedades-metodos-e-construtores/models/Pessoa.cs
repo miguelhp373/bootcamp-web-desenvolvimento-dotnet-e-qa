@@ -7,11 +7,19 @@ namespace propriedades_metodos_e_construtores.models
 {
     public class Pessoa
     {
+        public Pessoa(){}
+
+        public Pessoa(string name, string lastName)
+        {
+            Name = name;
+            LastName = lastName;
+        }
+
         private string? _name;
         private int _age { get; set; }       
 
 
-        public string? name 
+        public string? Name 
         { 
             get => _name!.ToUpper();
 
@@ -25,11 +33,11 @@ namespace propriedades_metodos_e_construtores.models
             } 
         }
 
-        public string? lastName { get; set; }
+        public string? LastName { get; set; }
 
-        public string? fullName => $"{name} {lastName}".ToUpper();
+        public string? FullName => $"{Name} {LastName}".ToUpper();
          
-        public int age 
+        public int Age 
         { 
             get => _age; 
             set
@@ -44,9 +52,9 @@ namespace propriedades_metodos_e_construtores.models
 
         
 
-        public void showPerson()
+        public void ShowPerson()
         {
-            Console.WriteLine($"Name: {fullName} Age {age}");
+            Console.WriteLine($"Name: {FullName} Age {Age}");
         }
 
     }
