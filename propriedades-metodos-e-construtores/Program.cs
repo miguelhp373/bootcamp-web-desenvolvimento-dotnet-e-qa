@@ -1,21 +1,22 @@
 ﻿using propriedades_metodos_e_construtores.models;
 
-Pessoa pessoa = new Pessoa();
+Pessoa pessoa1 = new Pessoa();
 
-pessoa.name = "Miguel";
-pessoa.lastName = "Pereira";
-pessoa.age = 10;
+pessoa1.name = "Miguel";
+pessoa1.lastName = "Henrique";
 
-//pessoa.showPerson();
+Pessoa pessoa2 = new Pessoa();
 
-Curso curso = new Curso();
+pessoa2.name = "James";
+pessoa2.lastName = "Gordon";
 
-curso.addNewStudent(pessoa);
 
-pessoa.name = "Jubileu";
-pessoa.lastName = "James";
-pessoa.age = 20;
+Curso ingles = new Curso();
 
-curso.addNewStudent(pessoa);
+ingles.name = "English";
+ingles.students = new List<Pessoa>();
 
-curso.studentsCounter();
+ingles.addNewStudent(pessoa1);
+ingles.addNewStudent(pessoa2);
+
+ingles.listAllStudents();

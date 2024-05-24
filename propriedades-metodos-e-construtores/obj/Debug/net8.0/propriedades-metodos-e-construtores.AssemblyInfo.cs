@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("propriedades-metodos-e-construtores")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67bdd4ff20cdbc6200d3de80f9cbb9f94c01d7a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+814a8de53fc5e45191f8a1c42cf7046b37aac4ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("propriedades-metodos-e-construtores")]
 [assembly: System.Reflection.AssemblyTitleAttribute("propriedades-metodos-e-construtores")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
